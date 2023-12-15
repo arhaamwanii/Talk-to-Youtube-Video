@@ -10,6 +10,7 @@ const Header = () => {
     <div style={headerStyle}>
       <div style={leftSideStyle}>
         Ask YouTube
+        <img src="logo.png" alt="logo for youtube but it is green" />
       </div>
       <div style={rightSideStyle} onClick={goToGitHub}>
         <span style={sourceCodeStyle}>Source Code → </span>
