@@ -4,6 +4,7 @@ import { DefaultInput } from './Components/Input'
 import { TrailingIconButtons } from './Components/Button';
 import { SuccessBanner } from './Components/Output';
 import Header from './Components/Heder';
+import { Hero } from './Components/Hero';
 
 function App() {
 
@@ -19,8 +20,9 @@ function App() {
     <TrailingIconButtons />
   </div>
   <SuccessBanner/>
-  <div>
 
+  <div>
+    <Hero/>
   </div>
   
     </>

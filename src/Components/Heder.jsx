@@ -3,14 +3,14 @@ import { FaGithub } from 'react-icons/fa'; // Assuming you have installed the 'r
 
 const Header = () => {
   const goToGitHub = () => {
-    window.location.href = 'https://github.com'; // Replace with your GitHub repository URL
+    window.location.href = 'https://github.com/arhaamwaii/y'; // Replace with your GitHub repository URL
   };
 
   return (
     <div style={headerStyle}>
       <div style={leftSideStyle}>
-        Ask YouTube
-        <img src="logo.png" alt="logo for youtube but it is green" />
+        <img src="youtubegreenlogo.png" style={image} alt="logo for youtube but it is green" />
+        <span style={text}> Ask YouTube </span>
       </div>
       <div style={rightSideStyle} onClick={goToGitHub}>
         <span style={sourceCodeStyle}>Source Code → </span>
@@ -33,7 +33,17 @@ const headerStyle = {
 
 const leftSideStyle = {
   fontWeight: 'bold',
+  display: 'flex',
+  alignitems: 'center',
+  justifyContent: 'center',
+  gap: '10px'
 };
+const image = {
+  height : '35px'
+}
+const text = {
+  marginTop : '5px'
+}
 
 const rightSideStyle = {
   cursor: 'pointer',
