@@ -17,18 +17,15 @@ const [question , setQuestion] = useState("")
 
   function HandleClick() {
     setIsHidden(false)
-    if (response === null) {
-      setOutput(<AlertBanner/>)
-    } else {
-      setOutput( <SuccessBanner showResponse={response} />)
-    }
+    
+
 
 
   const fetchData = async () => {
     try {
 
       //enter the api url here ---->>
-    const apiUrl = `https://your-api-endpoint${apiInput}`;
+      const apiUrl = `https://your-api-endpoint${apiInput}`;
 
 
   const apiResponse = await fetch(apiUrl, {
@@ -48,7 +45,14 @@ const [question , setQuestion] = useState("")
     } catch (error) {
       console.error('Error fetching data:', error);
     }
+        if (response === null) {
+      setOutput(<AlertBanner/>)
+    } else {
+      setOutput( <SuccessBanner showResponse={response} />)
+    }
 };
+
+fetchData()
 
   } 
 
@@ -56,6 +60,8 @@ const apiInput = {
   "youtube_url" : {youtubeURL},
   "question": {question}
 }
+
+
 
   return (
     <>
