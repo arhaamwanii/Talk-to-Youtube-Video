@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa'; // Assuming you have installed the 'r
 
 const Header = () => {
   const goToGitHub = () => {
-    window.location.href = 'https://github.com/arhaamwaii/y'; // Replace with your GitHub repository URL
+    window.location.href = 'https://github.com/arhaamwanii/Talk-to-Youtube-Video'; // Replace with your GitHub repository URL
   };
 
   return (
