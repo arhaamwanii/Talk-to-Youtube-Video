@@ -19,9 +19,10 @@ function App() {
   <div className='button '>
     <TrailingIconButtons />
   </div>
+
   <SuccessBanner/>
 
-  <div>
+  <div className='mt-20'>
     <Hero/>
   </div>
   

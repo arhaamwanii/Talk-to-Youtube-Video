@@ -11,16 +11,15 @@ export function SuccessBanner() {
         
         <div className="flex  items-center justify-between space-x-4">
           <h4>Response:</h4>
-             <div>
-            <p className="text-sm font-medium text-green-600">
-              This is some informational text that you can use to show some success content
-            </p>
-          </div>
+          
           <div>
             <CheckCircle className="h-6 w-6 text-green-600" />
           </div>
-       
         </div>
+
+        <p className="text-sm font-medium text-green-600 float-left">
+              This is some informational text that you can use to show some success content
+        </p>
       </div>
     </>
 
