@@ -3,7 +3,7 @@ import React from 'react'
 export function Hero() {
   return (
     <section>
-      <div>
+      <div className='flex felx-column  '>
       <div className="px-4 py-8 inline " >
         <h1 className=" text-2xl float-left tracking-tight text-gray-800  inline">
           How to Use?
@@ -15,11 +15,7 @@ export function Hero() {
             <li className=" float-left">3.  Click Submit and have you Answer.</li>
         </ol>    
       </div>
-
-      <div>
-        <img src="" alt="" />
-      </div>
-
+      
       </div>
     </section>
   )

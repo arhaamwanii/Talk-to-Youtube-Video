@@ -7,7 +7,7 @@ export function SuccessBanner() {
     }
   return (
     <>
-      <div style={height} className="rounded-md border-l-4 border-green-500 bg-green-100 p-4">
+      <div style={height} className=" rounded-md border-l-4 border-green-500 bg-green-100 p-4">
         
         <div className="flex  items-center justify-between space-x-4">
           <h4>Response:</h4>

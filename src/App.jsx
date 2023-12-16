@@ -22,9 +22,11 @@ function App() {
 
   <SuccessBanner/>
 
-  <div className='mt-20'>
+  <div className='mt-10'>
     <Hero/>
   </div>
+
+  <p >build by <a className='text-green-500' href="https://github.com/Ahmet-Dedeler">ahmet🌱</a> and <a className='text-green-500'  href="https://github.com/arhaamwanii">arham🌱</a>.</p>
   
     </>
   )

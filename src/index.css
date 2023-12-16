@@ -15,8 +15,11 @@
 .button{
     padding-bottom: 40px;
 }
+.input1{
+    width: 80%;
+}
 .input2{
     height: 80px;
-
+    width: 80%;
 }
 

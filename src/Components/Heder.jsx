@@ -7,7 +7,7 @@ const Header = () => {
   };
 
   return (
-    <div style={headerStyle}>
+    <div  style={headerStyle}className='text-green-500'>
       <div style={leftSideStyle}>
         <img src="youtubegreenlogo.png" style={image} alt="logo for youtube but it is green" />
         <span style={text}> Ask YouTube </span>
@@ -27,7 +27,7 @@ const headerStyle = {
   alignItems: 'center',
   padding: '10px',
   background: '#333',
-  color: 'white',
+  color: '',
   borderRadius: '7px'
 };
 
@@ -49,6 +49,7 @@ const rightSideStyle = {
   cursor: 'pointer',
   display: 'flex',
   alignItems: 'center',
+  color: 'white'
 };
 
 const sourceCodeStyle = {
