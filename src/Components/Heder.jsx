@@ -10,7 +10,10 @@ const Header = () => {
     <div  style={headerStyle}className='text-green-500'>
       <div style={leftSideStyle}>
         <img src="youtubegreenlogo.png" style={image} alt="logo for youtube but it is green" />
-        <span style={text}> Ask YouTube </span>
+        <span style={text}> Chat with YT </span>
+      </div>
+      <div>
+        MLH <span style={{color: 'white'}}> - Open Source Hackathon</span> 
       </div>
       <div style={rightSideStyle} onClick={goToGitHub}>
         <span style={sourceCodeStyle}>Source Code → </span>

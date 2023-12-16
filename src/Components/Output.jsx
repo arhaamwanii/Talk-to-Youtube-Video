@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
 
-export function SuccessBanner() {
+export function SuccessBanner({showResponse}) {
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -19,7 +19,7 @@ export function SuccessBanner() {
 
       <div className="flex-1">
         <p className="text-sm font-medium text-green-600 float-left mt-4">
-          This is some informational text that you can use to show some success content, This is some informational text that you can use to show some success content, This is some informational text that you can use to show some success content, This is some informational text that you can use to show some success content, This is some informational text that you can use to show some success content, 
+          {showResponse}
         </p>
       </div>
     </div>
