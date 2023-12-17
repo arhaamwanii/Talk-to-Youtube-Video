@@ -8,7 +8,7 @@ import Header from './Components/Heder';
 import { Hero } from './Components/Hero';
 import { AlertBanner } from './Components/FialedOutput';
 import { client } from "@gradio/client";
-import axios from 'axios';
+import Loading from './Components/Loading';
 
 
 function App() {
@@ -17,12 +17,12 @@ const [isHidden, setIsHidden] = useState(true);
 const [outPut , setOutput] = useState("")
 const [youtubeURL , setYoutubeURL] = useState("")
 const [question , setQuestion] = useState("")
-let [resultData, setResultData] = useState("");
+
 
   function  HandleClick() {
     setIsHidden(false)
 
-   
+    setOutput(<Loading/>)
 
     const fetchData = async () => {
       const app = await client("https://chai182-chat-with-youtube.hf.space/--replicas/jwzlp/");
@@ -80,3 +80,6 @@ console.log(response)
 }
 
 export default App
+
+
+//comm
