@@ -1,7 +1,6 @@
 import React from 'react';
 
 export function DefaultInput({ placeholder, classN , input , setInput }) {
-  console.log(input)
   return (
     <div className="w-full">
       <input

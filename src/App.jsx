@@ -7,59 +7,50 @@ import { SuccessBanner } from './Components/Output';
 import Header from './Components/Heder';
 import { Hero } from './Components/Hero';
 import { AlertBanner } from './Components/FialedOutput';
+import { client } from "@gradio/client";
+import axios from 'axios';
+
 
 function App() {
-const [response , setResponse] = useState(null);
+let [response , setResponse] = useState(null);
 const [isHidden, setIsHidden] = useState(true);
 const [outPut , setOutput] = useState("")
 const [youtubeURL , setYoutubeURL] = useState("")
 const [question , setQuestion] = useState("")
+let [resultData, setResultData] = useState("");
 
-  function HandleClick() {
+  function  HandleClick() {
     setIsHidden(false)
-    
 
+   
 
+    const fetchData = async () => {
+      const app = await client("https://chai182-chat-with-youtube.hf.space/--replicas/jwzlp/");
+      const result = await app.predict("/predict", [		
+				{youtubeURL}, // string  in 'youtube_url' Textbox component		
+				{question}, // string  in 'question' Textbox component
+	]);
 
-  const fetchData = async () => {
-    try {
+console.log(result.data);
 
-      //enter the api url here ---->>
-      const apiUrl = `https://your-api-endpoint${apiInput}`;
+setResponse(response = result.data)
+console.log(response)
 
-
-  const apiResponse = await fetch(apiUrl, {
-      method: 'POST', // or 'GET', 'PUT', etc.
-      headers: {
-          'Content-Type': 'application/json',
-        },
-      body: JSON.stringify(apiInput),
-    });
-
-    if (apiResponse.ok) {
-        const data = await apiResponse.json();
-        setResponse(data); 
-      } else {
-        console.error('Error:', apiResponse.status, apiResponse.statusText);
-      }
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-        if (response === null) {
+    if (response === null) {
       setOutput(<AlertBanner/>)
     } else {
       setOutput( <SuccessBanner showResponse={response} />)
     }
-};
 
-fetchData()
 
+    };
+    fetchData()
   } 
 
-const apiInput = {
-  "youtube_url" : {youtubeURL},
-  "question": {question}
-}
+// const apiInput = {
+//   "youtube_url" : {youtubeURL},
+//   "question": {question}
+// }
 
 
 
