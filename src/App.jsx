@@ -94,4 +94,8 @@ export default App
 //
 //
 //af
+//weird asf
 //
+
+//bro i havent coeded in like 4 days tf in the, end this is not what i want to do bro is there a possibility in any way that we do this and we get the same attention as like eger 
+//it is true that we need to do this to make money
