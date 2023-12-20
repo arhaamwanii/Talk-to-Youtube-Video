@@ -106,3 +106,4 @@ export default App
 //
 //
 //in the end we all die dont we so we are going to make it to the other end if we dont we will have to it is this constant balttle with the inner self and the battle with the it is this notion that we are going to die that gives life // in th  eh end we all di  n 
+//who are you to oppose reality stop doing thinggs you believe to be wrong, cause if you are lying about things
