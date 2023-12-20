@@ -99,6 +99,6 @@ export default App
 
 //bro i havent coeded in like 4 days tf in the, end this is not what i want to do bro is there a possibility in any way that we do this and we get the same attention as like eger 
 //it is true that we need to do this to make money
-
+//
 // wahi jahan
 //in the end we all die dont we so we are going to make it to the other end if we dont we will have to it is this constant balttle with the inner self and the battle with the it is this notion that we are going to die that gives life // in th  eh end we all di  n 
